@@ -6,7 +6,7 @@ ${browser}  chrome
 ${url}  https://www.saucedemo.com
 
 *** Test Cases ***
-LoginTest
+LoginTestls
     Given Login
     And Adding to cart
     Then Enter credentials

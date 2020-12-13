@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201210 05:30:33.495" rpa="false">
+<suite id="s1" name="Testcase1" source="C:\Users\moolya\PycharmProjects\Automation\Testcases\Testcase1.robot">
+<test id="s1-t1" name="LoginTest">
+<kw name="Given Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20201210 05:30:33.695" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<status status="PASS" starttime="20201210 05:30:33.695" endtime="20201210 05:30:38.027"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="user-name"]</arg>
+<arg>standard_user</arg>
+</arguments>
+<msg timestamp="20201210 05:30:38.027" level="INFO">Typing text 'standard_user' into text field 'xpath://*[@id="user-name"]'.</msg>
+<status status="PASS" starttime="20201210 05:30:38.027" endtime="20201210 05:30:38.123"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@id='password']</arg>
+<arg>secret_sauce</arg>
+</arguments>
+<msg timestamp="20201210 05:30:38.123" level="INFO">Typing text 'secret_sauce' into text field 'xpath://input[@id='password']'.</msg>
+<status status="PASS" starttime="20201210 05:30:38.123" endtime="20201210 05:30:38.203"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="login-button"]</arg>
+</arguments>
+<msg timestamp="20201210 05:30:38.203" level="INFO">Clicking element 'xpath://*[@id="login-button"]'.</msg>
+<status status="PASS" starttime="20201210 05:30:38.203" endtime="20201210 05:30:43.422"></status>
+</kw>
+<status status="PASS" starttime="20201210 05:30:33.695" endtime="20201210 05:30:43.422"></status>
+</kw>
+<kw name="And Adding to cart">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="inventory_container"]/div/div[1]/div[3]/button</arg>
+</arguments>
+<msg timestamp="20201210 05:30:43.422" level="INFO">Clicking element 'xpath://*[@id="inventory_container"]/div/div[1]/div[3]/button'.</msg>
+<status status="PASS" starttime="20201210 05:30:43.422" endtime="20201210 05:30:43.494"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="shopping_cart_container"]/a/span</arg>
+</arguments>
+<msg timestamp="20201210 05:30:43.494" level="INFO">Clicking element 'xpath://*[@id="shopping_cart_container"]/a/span'.</msg>
+<status status="PASS" starttime="20201210 05:30:43.494" endtime="20201210 05:30:43.838"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="cart_contents_container"]/div/div[2]/a[2]</arg>
+</arguments>
+<msg timestamp="20201210 05:30:43.838" level="INFO">Clicking element 'xpath://*[@id="cart_contents_container"]/div/div[2]/a[2]'.</msg>
+<status status="PASS" starttime="20201210 05:30:43.838" endtime="20201210 05:30:44.198"></status>
+</kw>
+<status status="PASS" starttime="20201210 05:30:43.422" endtime="20201210 05:30:44.198"></status>
+</kw>
+<kw name="Then Enter credentials">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="first-name"]</arg>
+<arg>Chethan</arg>
+</arguments>
+<msg timestamp="20201210 05:30:44.206" level="INFO">Typing text 'Chethan' into text field 'xpath://*[@id="first-name"]'.</msg>
+<status status="PASS" starttime="20201210 05:30:44.198" endtime="20201210 05:30:44.294"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="last-name"]</arg>
+<arg>Sanjay</arg>
+</arguments>
+<msg timestamp="20201210 05:30:44.294" level="INFO">Typing text 'Sanjay' into text field 'xpath://*[@id="last-name"]'.</msg>
+<status status="PASS" starttime="20201210 05:30:44.294" endtime="20201210 05:30:44.366"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="postal-code"]</arg>
+<arg>560041</arg>
+</arguments>
+<msg timestamp="20201210 05:30:44.366" level="INFO">Typing text '560041' into text field 'xpath://*[@id="postal-code"]'.</msg>
+<status status="PASS" starttime="20201210 05:30:44.366" endtime="20201210 05:30:44.438"></status>
+</kw>
+<status status="PASS" starttime="20201210 05:30:44.198" endtime="20201210 05:30:44.438"></status>
+</kw>
+<kw name="Then Verify and finish">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="checkout_info_container"]/div/form/div[2]/input</arg>
+</arguments>
+<msg timestamp="20201210 05:30:44.438" level="INFO">Clicking element 'xpath://*[@id="checkout_info_container"]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20201210 05:30:44.438" endtime="20201210 05:30:44.815"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="checkout_summary_container"]/div/div[2]/div[8]/a[2]</arg>
+</arguments>
+<msg timestamp="20201210 05:30:44.815" level="INFO">Clicking element 'xpath://*[@id="checkout_summary_container"]/div/div[2]/div[8]/a[2]'.</msg>
+<status status="PASS" starttime="20201210 05:30:44.815" endtime="20201210 05:30:45.399"></status>
+</kw>
+<status status="PASS" starttime="20201210 05:30:44.438" endtime="20201210 05:30:45.399"></status>
+</kw>
+<status status="PASS" starttime="20201210 05:30:33.695" endtime="20201210 05:30:45.399" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201210 05:30:33.495" endtime="20201210 05:30:45.407"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Testcase1">Testcase1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
